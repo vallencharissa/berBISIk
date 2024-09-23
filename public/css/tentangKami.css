@@ -1,0 +1,1002 @@
+*{
+    font-family: 'Poppins';
+
+}
+
+.header-container {
+    display: flex;
+    background-color: #F9EEE1;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.header-container .bg {
+    height: 50vh;
+}
+
+.header{
+    height: 50vh;
+    /* background-image: url("../assets/tentangKami2.png"); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 2rem 6%;
+}
+
+.visi-section, .misi-section {
+    padding: 2rem 0;
+}
+
+.header h1 {
+    font-size: 100px;
+    color: #6C356A;
+}
+
+.header span{
+    
+    font-size: 100px;
+    color: #FF885E;
+    font-weight: 700;
+    margin-bottom: -25px;
+    
+}
+
+.header img {
+    width: 10vw;
+}
+
+.header span :first-child{
+    color: #FF885E;
+}
+
+.header p{
+
+    color: rgb(95, 42, 93);
+    font-weight: 600;
+    
+}
+
+.bg-tab {
+    display: none;
+}
+
+.judul{
+    text-align: center;
+    /* margin-top: 30px;
+    margin-bottom: 10px; */
+    position: relative;
+    bottom: 0;
+}
+
+.judul span{
+
+    font-weight: 600;
+	font-family: 'poppins';
+    font-size: 64px;
+    color:rgb(95, 42, 93) ;
+   
+
+}
+
+.judul span :first-child{
+    color: #FF885E;
+}
+
+.cerita-section {
+    padding: 2rem 0;
+    overflow-x: hidden;
+}
+
+.cerita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cerita h2 {
+    color: #6C356A;
+    font-weight: 600;
+    font-size: 64px;
+    /* text-align: center; */
+    position: relative;
+    display: flex;
+    bottom: -2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cerita .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.content p {
+    color: #6C356A;
+    font-weight: 600;
+}
+
+.cerita span {
+    color: #FF885E;
+}
+
+.gradient-text {
+    
+    background: linear-gradient(45deg, #6C356A, #FF885E, #FF885E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cerita img {
+    position: relative;
+    width: 30vw;
+    /* height: 20vh; */
+}
+
+#circle-left {
+    left: -5vw;
+    top: 0vw;
+}
+
+#circle-right {
+    right: -5vw;
+    bottom: 0px;
+}
+
+.para p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.visi{
+    background-color: #A98FA8;
+    display: flex;
+    align-items:center;
+    gap: 2.5rem;
+    text-align: right;
+}
+
+.visi span{
+
+    color: white;
+    font-size: 15vw;
+    font-weight: bolder;
+    width:1000px;
+    height:0px; 
+    line-height: 86%;
+    text-align: right;
+    
+
+}
+
+.visi p{
+
+    /* font-size: 14px; */
+    width: 40vw;
+    text-align: left;
+    margin-left: 15%;
+    color: rgb(95, 42, 93);
+    margin: 2rem;
+
+}
+
+.visiKami{
+
+    margin-bottom: -35px;
+    margin-top: -40px;
+    margin-left: 3%;
+}
+
+.misi{
+
+    background-color: #ffbea6;
+    display: flex;
+    align-items:center;
+    gap:0px;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+}
+
+.misi span{
+
+    color: white;
+    font-size: 15vw;
+    font-weight: bolder;
+    line-height: 94%;
+    
+}
+
+.misi p{
+    margin: 2rem;
+    /* font-size: 14px; */
+    width: 40vw;
+    text-align: right;
+    color: rgb(95, 42, 93);
+
+}
+
+.misiKami{
+
+    width: 65%;
+    margin-bottom: -35px;
+    margin-top: -50px;
+}
+
+.timKami{
+
+    display: flex;
+    position:relative;
+    align-items: center;
+    margin: 40px;
+    width:fit-content; 
+
+}
+
+.juduls h1{
+
+    margin-right: 22px;
+    font-size: 60px;
+    color: rgb(95, 42, 93);
+    font-weight: 600;
+
+}
+
+.bulet{
+
+    border-radius: 100%;
+    background-color:  #FF885E;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: -999;
+    right: 0;
+}
+
+.case{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+
+}
+
+/* .bisik{
+
+    height: 200%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/bisiBg.png");
+
+} */
+
+.bisi h1{
+
+    text-align: center;
+    font-size: 50px;
+    color: rgb(95, 42, 93);
+    font-weight: 600;
+    padding-top: 25px;
+
+}
+
+.bisik .bisi{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bisik .bisi .satu{
+
+    width: 30%;
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../assets/bubble1.png");
+
+}
+
+.bisi span{
+
+    
+    color: #FF885E;
+
+}
+
+.all{
+
+    display: flex;
+}
+
+.rating{
+
+    display: flex;
+}
+
+.rating img{
+
+    width: 20%;
+    height: 100%;
+}
+
+.member-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.second-row {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.member .img1 img{
+
+    width: 200px;
+    height: 240px;
+}
+
+.img2 img{
+
+    width: 180px;
+    height:  240px;
+}
+
+.img3 img{
+
+    width: 230px;
+    height: 242px;
+}
+
+.img4 img{
+
+    width: 160px;
+    height: 240px;
+
+}
+
+.img5 img{
+    width: 170px;
+    height: 240px;
+    /* margin-bottom: 24%; */
+
+}
+.img1, .img2, .img3, .img4, .img5{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+    height: 240px;
+
+}
+
+.img1 .bulet-img1{
+
+    margin-top: 10%;
+    width: 100%;
+    height: 85%;
+    border-radius: 100%;
+    background-color: #755365;
+    position: absolute;
+    z-index: -1;
+}
+
+.img1 .kotak-img1{
+
+    width: 140%;
+    height: 3%;
+    opacity: 70%;
+    background-color: #ed9e82;
+    position: absolute;
+    transform: rotate(75deg);
+    right: 12%;
+
+}
+
+.img2 .kotak-img2{
+
+    width: 60%;
+    height: 100%;
+    background-color: #755365;
+    position: absolute;
+    z-index: -1;
+}
+
+.img3 .bulet-img3{
+
+    width: 14%;
+    height: 13%;
+    border-radius: 100%;
+    background-color: #FF885E;
+    position: absolute;
+    top: 7%;
+}
+
+.img3 .kotak-img3{
+
+    width: 40%;
+    height: 95%;
+    background-color: #755365;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(40deg);
+    left: 30%;
+}
+
+.img4 .bulet-img4{
+
+    width: 22%;
+    height: 15%;
+    border-radius: 100%;
+    background-color: #FF885E;
+    position: absolute;
+    bottom: -5%;
+}
+
+.img4 .kotak-img4{
+
+    width: 55%;
+    height: 100%;
+    background-color: #755365;
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+}
+
+.img5 .bulet-img5{
+
+    margin-top  : 20%;
+    width: 110%;
+    height: 60%;
+    border-radius: 100%;
+    background-color: #755365;
+    position: absolute;
+    z-index: -2;
+    top: 2%;
+    left: 10%;
+}
+
+.img5 .kotak-img5{
+
+    width: 175%;
+    height: 3%;
+    opacity: 70%;
+    background-color: #ed9e82;
+    position: absolute;
+    transform: rotate(45deg);
+    left: -30%;
+    z-index:-1;
+  
+}
+
+.nama{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 50px; */
+    text-align: center;
+}
+
+.nama h1{
+    font-size: 24;
+}
+
+.nama p{
+    font-size: 16;
+}
+
+/* .el, .jeje,.jessy,.ly,.val{
+    text-align: center;
+} */
+
+/* ADVERTISEMENT SECTION */
+
+
+.advertisement-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.advertisement-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertisement-box h2 {
+    font-size: 52px;
+    color: #5F2A5D;
+}
+
+/* .advertisement-box h1, .advertisement-box p {
+    text-align: center;
+} */
+
+.advertisement-box p {
+    text-align: center;
+}
+
+.advertisement-box img {
+    /* width: 20vw; */
+    height: 15vw;
+}
+
+/* BISIKAN MEREKA SECTION */
+.bisikan-mereka-section {
+    background-color: #F9EEE1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/tentangKami/commentAsset.png");
+}
+
+
+.bisi h2 {
+    font-size: 60px;
+    text-align: center;
+    color: #6C356A;
+    /* font-weight: 600; */
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+
+/* .comment-container:nth-child() */
+
+.comment-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    
+}
+
+.comment-container .comment-box:nth-of-type(odd) {
+    align-self: flex-end;
+}
+
+.comment-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    padding-left: 20px; /* Space for the triangle */
+    width: 50vw;
+}
+.comment {
+    display: flex;
+    z-index: 2;
+    /* height: 50vw;
+    background-image: url("../assets/tentangKami/commentBox.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: #755364;
+    border-radius: 70px;
+    /* height: 30vh;
+     */
+   
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .content {
+    display: flex;
+    justify-content: center; */
+    /* flex-direction: column; */
+/* } */
+
+.comment-container .comment-box:nth-of-type(even) .triangle{
+    align-self: flex-start;
+}
+
+.triangle {
+    position: relative;
+    height: 6rem;
+    top: -4rem;
+    /* right: 0; */
+    align-self: flex-end;
+    z-index: 1;
+}
+
+.profile-picture {
+    height: 6vw;
+    margin-right: 1rem;
+    align-self: start;
+}
+
+.comment p {
+    color: #fff;
+    font-weight: 400;
+}
+
+/* .content p {
+    width: 50%;
+} */
+
+.name-desc {
+    margin-right: 1rem;
+}
+
+.name-desc h3 {
+    color: #fff;
+}
+
+.name-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.name-rating img {
+    height: 3vw;
+}
+
+
+.semua h1{
+
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(95, 42, 93);
+
+}
+
+.semua p{
+
+    font-size: 20px;
+}
+
+.faq{
+    padding: 3%;
+}
+
+.faq h2{
+
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(95, 42, 93);
+    font-weight: 600;
+
+}
+
+.a {
+
+    background-color: #F9EEE1;
+    padding: 30px 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question h4{
+    color: rgb(95, 42, 93);
+    font-size: 16;
+}
+
+.icon {
+    color: #6C356A;
+    margin-right: 16px;
+    transition: transform 0.2s;
+}
+
+.icon.active {
+    transform: rotate(-180deg);
+}
+
+.answer {
+    /* padding-top: 1%; */
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.answer.active {
+    padding-top: 8px;
+}
+
+@media(max-width: 1024px) {
+    .visi {
+        gap: 0.5rem;
+    }
+    /* .misi span, .visi span {
+        line-height: 100%;
+    } */
+
+    .misi span, .visi span {
+        line-height: 110%;
+    }
+
+    .visi p, .misi p {
+        width: 50vw;
+        margin: 1rem;
+    }
+    /* .member-container {
+        flex-wrap: wrap;
+    } */
+    .cerita h2 {
+        bottom: 0;
+    }
+    .cerita-section .content img {
+        position: relative;
+        /* width: 20vw; */
+        height: 100%;
+    }
+    
+    #circle-left {
+        left: -5vw;
+        top: 0px;
+    }
+    
+    #circle-right {
+        right: -5vw;
+        bottom: 0px;
+    }
+    
+
+    .img1, .img2, .img3, .img4, .img5{
+        height: 160px;
+    
+    }
+
+    .member .img1 img, .img2 img, .img3 img, .img4 img, .img5 img{
+        width: auto;
+        height: 160px;
+    
+    }
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-container .bg {
+        height: 25vh;
+        width: 100%;
+    }
+    
+    .header-bg .bg {
+        transform: scaleY(-1);
+    }
+
+    .header-container .bg:nth-last-of-type(1) {
+        display: none;
+    }
+
+    .header {
+        position: relative;
+        top: -1rem;
+        height: 8vh;
+        margin: 1rem;
+    }
+
+    .header .title {
+        /* display: flex; */
+        flex-direction: row;
+    }
+
+    .title img {
+        margin-right: 1rem;
+    }
+
+    .header span, .header h1 {
+        font-size: 64px;
+        /* margin: 1rem; */
+    }
+
+    .a {
+        margin: 1rem;
+    }
+
+    .bisi h2, .juduls h1, .cerita h2, .faq h2 {
+        font-size: 48px;
+    }
+
+    .advertisement-box h2 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+   
+
+    .comment-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comment-box {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .comment {
+        padding: 1.5rem;
+       
+    }
+
+    .comment .content p {
+        font-size: 10px;
+    }
+
+    .comment-container .comment-box:nth-of-type(odd) {
+        align-self: center;
+    }
+
+}
+
+@media(max-width: 528px) {
+
+    .second-row {
+        flex-direction: column;
+    }
+
+    .member {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .nama {
+        text-align: left;
+    }
+
+    .img1, .img2, .img3, .img4, .img5{
+        height: 100px;
+    
+    }
+
+    .member .img1 img, .img2 img, .img3 img, .img4 img, .img5 img{
+        width: auto;
+        height: 100px;
+    
+    }
+
+    .img5 .bulet-img5 {
+        width: 90%;
+    }
+
+
+
+}
+
+
+
+
+@media(max-width: 480px){
+    .visi-section, .misi-section {
+        padding: 1rem 0;
+    }
+
+    .header-bg {
+        display: flex;
+    }
+
+    .header-container .bg {
+        height: 10vh;
+        width: 50vw;
+        /* transform: scaleX(-1); */
+        align-self: flex-start;
+    }
+
+    .header span, .header h1 {
+        font-size: 40px;
+        /* margin: 1rem; */
+    }
+
+    .bisi h2, .juduls h1, .cerita h2, .faq h2 {
+        font-size: 32px;
+    }
+
+    .bg-tab {
+        height: 10vh;
+        width: 50vw;
+        display: flex;
+        transform: scaleY(-1);
+        align-self: flex-end;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #circle-left, #circle-right {
+        display: none;
+    }
+    .cerita-section {
+        padding: 2rem 9%;
+    }
+
+    .visi{
+        flex-direction: column-reverse;
+    }
+    .misi {
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .visi p, .misi p {
+        width: 70vw;
+        margin: 1rem;
+    }
+
+    .misiKami, .visiKami {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .misi span, .visi span {
+        line-height: normal;
+        font-size: 36px;
+    }
+
+    .misi p, .visi p {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,246 @@
+* {
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(95, 42, 93);
+    font-weight: 600;
+}
+
+p{
+    font-size: 16px;
+}
+
+.img_kelas {
+    position: relative;
+}
+
+.img_title h1 {
+    display: none;
+}
+
+.kotak {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    background-color: #FF885E;
+    width: 25.7vw;
+    height: 30.7vw;
+    border-radius: 30px;
+}
+
+.foto_acara {
+    position: relative;
+    width: 25.7vw;
+    height: 30.7vw;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.info {  
+    background-color: #F9EEE1;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    /* margin-bottom: 50px; */
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 0 0 80px 80px;
+    justify-content: flex-start;
+}
+
+.detail {
+    padding: 3%;
+    width: 100%;
+}
+
+.jadwal_acara {
+    background-color: #FF885E;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5%;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.infojadwal{
+    margin-left:10px;
+}
+
+.jadwal_acara span,
+.jadwal_acara h3 {
+    color: #ffffff;
+}
+
+.fa-regular {
+    color: #ffffff;
+    margin-right: 4px;
+}
+
+.daftar{
+    text-align: center;
+    margin-left: 20%;
+}
+
+.daftar a {
+    border: none;
+    background-color: #5F2A5D;
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    display:inline-block;
+    border-radius: 25px;
+	margin-top: 2%;  
+    transition: background-color 0.3s ease;
+}
+
+.daftar a:hover {
+    background-color: #F9EEE1; 
+    color: #5F2A5D;
+}
+
+.readonly-link {
+    pointer-events: none;
+}
+
+.back{
+    background-color: #F9EEE1;
+    padding-top: 1%;
+    padding-left: 2%;   
+}
+
+.pekerjaan{
+    background-color: #5F2A5D;
+    background-image: url(../assets/fotoVolunteer/detailBackground.png);
+    background-size: cover;
+    background-position: center;
+    padding: 3%; 
+    border-radius: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 8%;
+}
+
+.detil h1{
+    color: #F9EEE1;
+    margin-bottom: 8%;
+}
+
+.kriteria h3, li{
+    color:#F9EEE1;
+}
+
+.circle{
+    font-size: 0.35em;
+    vertical-align: middle;
+    color: #F9EEE1;
+}
+
+.desc_acara li{
+    color: black;
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    
+
+    .info {
+        flex-direction: column;
+        /* padding-top: 3rem; */
+        padding-right: 3%;
+        /* gap: 1rem; */
+    }
+
+    .desc_acara p {
+        margin-bottom: 0.5rem;
+    }
+
+    .foto_acara, .kotak {
+        width: 80vw;
+    }
+
+    .desc_acara h1 {
+        display: none;
+        text-align: center;
+    }
+
+    .img_title h1 {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .img_title {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .pekerjaan {
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    .kotak {
+        top: -1rem;
+        left: -1rem;
+    }
+
+    .detil h1 {
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+
+    .jadwal_acara {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .daftar, .infojadwal {
+        margin: 0;
+    }
+
+    .daftar h3 {
+        text-align: left;
+    }
+
+    .daftar a {
+        display: flex;
+        text-align: center;
+        /* align-self: flex-end; */
+        justify-content: center;
+    }
+
+
+
+    
+}

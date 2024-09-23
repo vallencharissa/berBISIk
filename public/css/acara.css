@@ -1,0 +1,594 @@
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+section {
+    padding: 2rem 6%;
+}
+
+.section-container {
+    background-image: url("../assets/acara/background-section.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.search{
+    background-image: url("../assets/acara/meeting.png");
+    background-position: center;
+    background-size: cover;
+    /* background: rgba(255, 255, 255, 0.5); */
+    height: 640px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.search-box2{
+    width: 30vw;
+    height: 51px;
+    border-radius: 25px;
+    padding: 15px 35px;
+    border: 2px solid  #5F2A5D;
+}
+
+.btnsearch{
+    border: none;
+    background-color: #5F2A5D;
+    padding: 12px 28px;
+    font-size: 14px;
+    color: #F9EEE1;
+    cursor: pointer;
+    display:inline-block;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-left: 1%;
+}
+
+.search-box{
+    display: flex;
+}
+
+.text-search h2{
+    color:#5F2A5D;
+}
+
+.text-search h1{
+    color: #5F2A5D;
+}
+
+.text-search span{
+    color: #FF885E;
+}
+
+.progress-section {
+    padding: 0;
+}
+
+.progress{
+    background: linear-gradient(to bottom, #F5DDC3, #FBF3EA);
+    padding: 4% 5% 4%;
+    border-radius: 0 0 300px 300px;
+}
+
+.progress h2{
+    color: #5F2A5D;
+}
+
+.progres_kelas{
+    background-color: white;
+    /* width: 35vw; */
+    /* height: 112px; */
+    padding: 2%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 1%;
+    align-items: center;
+    flex: 1;
+}
+
+.img_progress{
+    border-radius: 100%;
+    min-width: 6vw; /* Set your desired width */
+    min-height: 6vw; /* Set your desired height */
+    overflow: hidden; /* This will hide any parts of the image that exceed the container */
+    position: relative;
+}
+
+.img_progress img{
+    object-fit: cover;
+    position: absolute;
+    width: auto; /* This will allow the image to resize proportionally */
+    height: 100%; /* This will ensure the image fills the entire container vertically */
+    left: 50%; /* Center the image horizontally */
+    top: 50%; /* Center the image vertically */
+    transform: translate(-50%, -50%); /* Center the image precisely */
+}
+
+.desc_kelas{
+    margin: 0 auto;
+    margin-left: 3%;
+    width: 55%;
+}
+
+.deskripsi_pengajar p{
+    margin-left: 5px;
+}
+
+.progress_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2%;
+    /* flex-direction: column;
+    grid-row: 2; */
+}
+
+.desc_kelas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.persen{
+    position: relative;
+    min-width: 6vw;
+    min-height: 6vw;
+    background: conic-gradient(#FF885E 3.6deg, #D9D9D9 0deg);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    margin-right: 1%;
+}
+
+.persen:before{
+    content: "";
+    position: absolute;
+    height: 75%;
+    width: 75%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.value-percentage{
+    position: relative;
+    color: black;
+    font-weight: 600;
+}
+
+.tipe_kelas{
+    font-size: 14px;
+    font-weight: 500;
+    color: #5F2A5D;
+}
+
+.judul_kelas{
+    font-weight: bold;
+}
+
+.sesi_kelas{
+    font-size: 14px;
+}
+
+.kelas{
+    background-image: url(../assets/acara/Group\ 42.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* margin: 78px;
+    margin-top: -120px; */
+    /* kalo responsive dia bakal ttp hiks */
+    /* width: 1286px; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    /* height: 596px; */
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.judul2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    gap: 1rem;
+}
+
+.judul2 a{
+    color: #F9EEE1;
+    padding: 10px 15px;
+    border: 2px solid #F9EEE1;
+    border-radius: 25px;
+    /* margin-right: 40px; */
+}
+
+.judul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* margin: auto; */
+    /* padding: 32px; */
+}
+
+.judul-icon {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 1rem;
+}
+
+.judul h2{
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    color: #F9EEE1;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.container::-webkit-scrollbar {
+    width: 2em;
+}
+
+/* Kalau mau ada scroll  bar, tapi bagusan gaada sih*/
+.container::-webkit-scrollbar-track {
+    background: #5F2A5D;
+    border-radius: 100vw;
+    width: 2em;
+}
+
+.container::-webkit-scrollbar-thumb {
+    width: 2em;
+    background: #FABEA9;
+    border:.25em solid #5F2A5D;
+    width: 2em;
+    border-radius: 100vw;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #FF885E;
+    width: 2em;
+    border-radius: 100vw; 
+} 
+
+.c2{
+    width: 292px;
+    height: 399px;
+    margin: 10px;
+}
+
+.c2 h3{
+    font-size: 14px;
+}
+
+.c2 p{
+    /* margin-left: 5px; */
+    font-size: 10px;
+}
+
+.tipe{
+    background-color: #FFDA93;
+    padding: 10px 15px;
+    font-size: 14px;
+    width: max-content;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.img_kelas img{
+    position: relative;
+    height: 160px;
+    width: 280px;
+    padding: 0;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+.modify_button_container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: -150px;
+    margin-right: 10px;
+}
+
+.modify_button img{
+    z-index: 10;
+    position: relative;
+    width: 33px;
+    height: 33px;
+}
+
+.kelas_card{
+    background-color: white;    
+    border-radius: 10px;
+    margin: -15px 15px 0px;
+    width: 280px;
+    height: 360px;
+}
+
+.card{
+    padding: 10px 20px 10px;
+    width: 280px;
+}
+
+.judul_acara {
+    display: flex;
+    height: 35px;
+    /* align-items: center; */
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    /* color: gray; */
+    align-items: center;
+}
+
+.icon img{
+    height: 16px;
+}
+
+.icon h3{
+    margin-left: 5px;
+    color: gray;
+}
+
+/* ini logika buat picture gak stretch */
+.profil_pengajar{
+    border-radius: 100%;
+    width: 30px; /* Set your desired width */
+    height: 30px; /* Set your desired height */
+    overflow: hidden; /* This will hide any parts of the image that exceed the container */
+    position: relative; /* Required for absolute positioning of the image */
+}
+
+.profil_pengajar img {
+    position: absolute;
+    width: auto; /* This will allow the image to resize proportionally */
+    height: 100%; /* This will ensure the image fills the entire container vertically */
+    left: 50%; /* Center the image horizontally */
+    top: 50%; /* Center the image vertically */
+    transform: translate(-50%, -50%); /* Center the image precisely */
+    
+}
+
+/* .profil_pengajar img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    overflow: hidden;
+} */
+
+.pengajar{
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.abu{
+    color: gray;
+}
+
+.volunteer-section .judul_acara {
+    margin-bottom: 1rem;
+}
+
+.relawan{
+    background-image: url(../assets/acara/Group\ 427320762.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* margin: 78px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 600px; */
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.c2_relawan{
+    width: 292px;
+}
+
+.c2_relawan h3{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.judul2_relawan{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+}
+
+.judul2_relawan a{
+    /* color: black; */
+    padding: 0.6rem;
+    border: 2px solid #5F2A5D;
+    border-radius: 25px;
+    /* margin-right: 40px; */
+}
+
+.judul_relawan{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* margin: auto; */
+    /* padding: 32px; */
+}
+
+.judul_relawan h2{
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    color: #5F2A5D;
+}
+
+.icon_relawan{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.fa-compass {
+    align-self: flex-start;
+    position: relative;
+    top: 0.2rem;
+}
+
+.icon_relawan img{
+    height: 16px;
+    margin-top: 2px;
+}
+
+.icon_relawan h3{
+    margin-left: 5px;
+    color: gray;
+    margin-top: 0;
+}
+
+.img_container{
+    height: 160px;
+}
+
+.relawan .kelas-card{
+    margin-top: 0;
+}
+
+.relawan .container{
+    height: 390px;
+    align-items: center;
+}
+
+.fa-regular {
+    color: #5D5D5D;
+    margin-right: 4px;
+}
+
+.fa-star {
+    margin-right: 4px;
+}
+
+.rating i {
+    color: #ffcc00;
+}
+
+.rating i.fa-regular {
+    color: #ddd;
+}
+
+.rating span {
+    color: #FF885E;
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .judul2 a, .judul2_relawan a {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .judul-icon {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .search-box2 {
+        width: 50vw;
+    }
+
+    .btnsearch {
+        width: 20vw;
+    }
+}
+
+@media(max-width: 480px){
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .c2 h3 {
+        font-size: 12px;
+    }
+
+    /* .c2 {
+        width: 200px;
+    } */
+
+    .btnsearch {
+        width: 30vw;
+    }
+
+    .judul2_relawan, .judul2{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0.8rem;
+    }
+
+    .judul2 a, .judul2_relawan a {
+        align-self: end;
+    }
+}

@@ -1,0 +1,98 @@
+section {
+    padding: 2rem 6%;
+}
+
+.input img {
+    width: 30%;
+    height: 30%;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+h1{
+    color: #5F2A5D;
+    /* margin: 50px; */
+    margin-bottom: 1rem;
+}
+
+.card{
+    /* margin: 50px; */
+    background-color: #F9EEE1;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input{
+    display: flex;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+
+.card label{
+    /* display: flex; */
+    width: 200px;
+    font-weight: 600;
+}
+
+select, input ,textarea{
+    border: 1px solid #5F2A5D;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+input[type="file"]{
+
+    border: 0px ;
+    border-radius: 0px;
+    padding: 0px;
+    width: 35%;
+
+}
+
+button{
+    border: 1px solid #5F2A5D;
+    padding: 10px 15px;
+    /* margin: 50px; */
+    margin-top: 0;
+    border-radius: 20px;
+    background-color: #5F2A5D;
+    color: #F9EEE1;
+}
+
+
+.pengajar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+.input_pengajar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input_pengajar p{
+    width: 330px;
+}
+
+
+@media(max-width: 768px) {
+    .input {
+        flex-direction: column;
+    }
+
+    .input_pengajar p, .input_pengajar a {
+        font-size: 12px;
+    }
+}

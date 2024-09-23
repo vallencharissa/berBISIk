@@ -1,0 +1,290 @@
+*{
+
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+}
+
+.case{
+
+    display: flex;
+
+}
+
+.conteiner{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+
+    width: 65%;
+
+}
+
+.kiri{
+
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text h1{
+
+    color: #5F2A5D;
+    text-align: left;
+}
+
+.kanan{
+
+    display: flex;
+    flex-direction: column;
+    background-color:  #F9EEE1; 
+    color: #FF885E;
+    height: 100vh;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.kanan img{
+
+    width: 65%;
+
+}
+
+.text-box , .text-box2 {
+
+    width: 55%;
+    height: 40px;
+    padding-left: 10%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url('../assets/email.png'); 
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: 5px;
+
+}
+
+.text-box2{
+
+    background-image: url('../assets/sandi.png'); 
+}
+
+
+button{
+
+    width: 65%;
+    border: 2px solid #5F2A5D;
+    padding: 10px 15px;
+    margin-top: 0;
+    border-radius: 5px;
+    background-color: #5F2A5D;
+    color: white;
+    
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.kiri p{
+
+    text-align: left;
+    color: #969AB8;
+}
+
+a{
+
+    color: #5F2A5D;
+    font-weight: 600;
+    text-decoration:none;
+}
+
+.alert {
+    /* padding: 5px; */
+    /* margin-bottom: 5px; */
+    /* border-radius: 4px; */
+}
+
+
+.alert ul span  {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+}
+
+@media only screen and (max-width: 840px) {
+
+    .case{
+    
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .kanan{
+    
+        display: flex;
+        flex-direction: column;
+        background-color:  #F9EEE1; 
+        color: #FF885E;
+        height: 25vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+   
+    .kanan img{
+    
+        width: 40%;
+    
+    }
+
+    .kiri{
+    
+        display: flex;  
+        flex-direction: column;
+        width: 100vw;
+        height: 65vh;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .text h1{
+    
+        color: #5F2A5D;
+        text-align: left;
+        font-size: 20x;
+    }
+    .kiri p{
+
+        text-align: left;
+        color: #969AB8;
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 835px) {
+
+    .case{
+    
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .kanan{
+    
+        display: flex;
+        flex-direction: column;
+        background-color:  #F9EEE1; 
+        color: #FF885E;
+        height: 30vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .kanan p{
+
+        font-size: 20px;
+    }
+    .kanan img{
+    
+        width: 40%;
+    
+    }
+
+    .kiri p{
+
+        text-align: left;
+        color: #969AB8;
+        font-size: 16px;
+    }
+  
+  
+}
+
+@media only screen and (max-width: 490px) {
+  
+    .case{
+    
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .text{
+    
+        width: 65%;
+    
+    }
+    
+    .kiri{
+    
+        display: flex;  
+        flex-direction: column;
+        width: 100vw;
+        height: 70vh;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .text h1{
+    
+        color: #5F2A5D;
+        text-align: left;
+        font-size: 20x;
+    }
+    
+    .kanan{
+    
+        display: flex;
+        flex-direction: column;
+        background-color:  #F9EEE1; 
+        color: #FF885E;
+        height: 20vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .kanan p{
+
+        font-size: 16px;
+    }
+    .kanan img{
+    
+        width: 50%;
+    
+    }
+   
+
+}

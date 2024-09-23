@@ -1,0 +1,881 @@
+/* ini untuk bagian container yang bisa di scroll atas bawah */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    height: fit-content;
+    align-items: center;
+}
+
+.container::-webkit-scrollbar {
+    width: 2em;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #5F2A5D;
+    border-radius: 100vw;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #FABEA9;
+    border: .25em solid #5F2A5D;
+    border-radius: 100vw;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #FF885E;
+}
+
+/* ini untuk bagian profile cardnya */
+/* yang ini polkadotnya manual, kalo mau pake background image tinggal diganti (belum sempurna) */
+.profcard{
+    display: flex;
+    /* height: 500px; */
+    background-color: #F9EEE1;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    /* background: radial-gradient(circle, #5F2A5D 15%, transparent 16%) 80px 150px,
+                radial-gradient(circle, #5F2A5D 30%, transparent 31%) 150px 50px,
+                radial-gradient(circle, #5F2A5D 20%, transparent 21%) 200px 180px,
+                radial-gradient(circle, #5F2A5D 25%, transparent 26%) 100px 250px,
+                radial-gradient(circle, #5F2A5D 30%, transparent 31%) 10000px 25000px,
+                #F9EEE1;  Warna latar belakang kotak 
+    background-size: 50px 50px, 70px 70px, 40px 40px, 60px 60px, 45px 45px; Ukuran polkadot yang berbeda-beda */
+    background-repeat: no-repeat;
+    padding-top: 8%;
+    padding: 2rem 6%;
+    gap: 1rem;
+}
+
+.header{
+    align-self: flex-start;
+    font-size: 24px;
+    color: #5F2A5D;
+    font-weight: bold;
+    /* margin-left: -74%; */
+}
+
+
+.card{
+    /* margin-top: 3%; */
+    position: relative;
+    width: 100%;
+    /* width: 1200px; */
+    /* height: 700px; */
+    /* background-color: #5F2A5D; Warna ungu */
+    background-image: linear-gradient(to bottom, #5F2A5D 70%, #ffffff89 30%);
+    border-radius: 25px;
+    /* margin-bottom: 8%; */
+    /* z-index: 1; */
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 2rem;
+}
+
+.card img {
+    /* margin-left: 60px; */
+    margin-top: 15%;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* margin-top: 5%; */
+
+}
+
+/* .cardKelas p {
+    margin-left: 5px;
+} */
+
+.buttons{
+    margin-right: 5%;
+    margin-top: 22%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: #f68af668;
+    font-size: 14px;
+    text-align: center;
+    /* line-height: 50px; */
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    /* bottom: 80px; */
+    /* z-index: 2; */
+    /* width: 10vw; */
+    /* height: 70%; */
+    padding: 1rem;
+}
+
+
+.btn2{
+    position: relative;
+    border: none;
+    background-color: #5F2A5D;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    display:inline-block;
+    border-radius: 25px;
+    font-weight: bold;
+    /* z-index: 2; */
+    width: 120px;
+    height: 50px;
+    /* bottom: 45px; */
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    /* margin-bottom: 3%; */
+    border-radius: 50%;
+    height: 100%;            /* Adjust as necessary */
+    width: 100%;   
+    position: relative;
+    bottom: -1vh;
+}
+
+.profil_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.data_profil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    color: white;
+    padding-left: 5%;
+    /* gap: 20vw; */
+    width: 100%;
+}
+
+.data_profil h2{
+    width: max-content;
+}
+
+.icon_profil{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    gap: 1rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.icon_profil i{
+    margin-right: 2%;
+}
+
+.icon_profil p{
+    margin-right: 3%;
+}
+
+.icon_profil div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.event-container {
+    background-image: url(../assets/profil/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 6%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    gap: 2rem;
+}
+
+/* Scroll Bar */
+/* .container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+} */
+
+.container::-webkit-scrollbar {
+    width: 2em;
+}
+
+
+/* ini untuk bagian history kelas */
+.history_acara{
+    background-image: url(../assets/profil/acara.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+    background-size: cover;
+    /* margin: 6%; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* width: 1287px; */
+    border-radius: 30px;
+    padding: 1% 3%;
+}
+
+.judul_history{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* margin: 2%; */
+    padding: 1% 2% 2.5%;
+    padding-left: 0;
+}
+
+.judul_history h2{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #5F2A5D;
+}
+
+
+/* ini untuk bagian kelas yang sedang berjalan */
+.history_relawan{
+    background-image: url(../assets/profil/kelas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    background-size: cover;
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: max-content;
+    /* width: 88%; Mengatur lebar elemen menjadi 100% dari kontainer induknya */
+    max-width: 110vw; /* Membatasi lebar maksimal hingga lebar viewport */
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 1% 3%; /* Menambahkan padding kiri dan kanan jika diperlukan */
+}
+
+.riwayat{
+    background-image: url(../assets/profil/riwayat.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+    background-size: cover;
+    /* margin: 6%; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* width: 1287px; */
+    border-radius: 30px;
+    padding: 1% 3%;
+}
+
+.judul{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+}
+
+.judul a{
+    padding: 0.6rem;
+    border: 2px solid #5F2A5D;
+    border-radius: 25px;
+}
+
+.history_relawan .cardKelas p {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+/* Acara yang dimiliki user */
+.tipe_kelas{
+    font-size: 14px;
+    font-weight: 500;
+    color: #5F2A5D;
+}
+
+.judul_kelas{
+    font-weight: bold;
+}
+
+.sesi_kelas{
+    font-size: 14px;
+}
+
+.kelas{
+    background-image: url(../assets/profil/acara.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 78px;
+    margin-top: -120px;
+    /* kalo responsive dia bakal ttp hiks */
+    width: 1286px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 596px;
+}
+
+.c2{
+    width: 292px;
+    margin: 0 10px;
+    margin-bottom: 2%;
+}
+
+.c2 h3{
+    font-size: 14px;
+}
+
+.c2 p{
+    /* margin-left: 5px; */
+    font-size: 10px;
+}
+
+.deskripsi_pengajar p {
+    margin-left: 5px;
+}
+
+.tipe{
+    background-color: #FFDA93;
+    padding: 10px 15px;
+    font-size: 14px;
+    width: max-content;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.img_kelas img{
+    position: relative;
+    height: 160px;
+    width: 280px;
+    padding: 0;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+.modify_button_container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: -53%;
+    margin-bottom: 41%;
+    margin-right: 10px;
+}
+
+.modify_button img{
+    z-index: 10;
+    position: relative;
+    width: 33px;
+    height: 33px;
+}
+
+.kelas_card{
+    background-color: white;    
+    border-radius: 10px;
+    margin: -15px 15px 0px;
+    width: 280px;
+}
+
+.relawan_card{
+    background-color: white;    
+    border-radius: 10px;
+    margin: 0 15px;
+    width: 280px;
+}
+
+.cardKelas{
+    padding: 10px 20px 10px;
+    width: 280px;
+}
+
+.judul_acara {
+    display: flex;
+    height: 35px;
+    /* align-items: center; */
+}
+
+.progress_container{
+    width: 76%;
+    background-color: #B4B4B4;
+    /* overflow: hidden; */
+    border-radius: 10px;
+    /* position: relative; */
+    /* padding: 2%; */
+}
+
+.progress{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.progress p{
+    color: white;
+    background-color: #FF885E;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.progress_bar{
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 0%; */
+    background-color: #FF885E;
+    /* transition: width 0.2s ease; */
+}
+
+.value-percentage{
+    position: relative;
+    color: white;
+    margin: 0.3rem;
+}
+
+.acara_icon {
+    width: 6vw;
+    height: 6vw;
+}
+
+.icon_location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon_location h3{
+    margin: 0 2% 0 1%;
+    color: black;
+    padding: 1%;
+}
+
+.icon_tanggal{
+    display: flex;
+    flex-direction: row;
+    /* color: gray; */
+    align-items: center;
+    justify-content: center;
+    margin: 4% 0 ;
+    padding: 4% 3%;
+    background-image: url(../assets/icon/Rectangle\ 113.png);
+    border-radius: 10px;
+}
+
+.icon_tanggal i{
+    padding: 1%;
+}
+
+.icon_tanggal h3{
+    margin: 0 2% 0 1%;
+    color: white;
+    padding: 1%;
+}
+
+.icon_link a:nth-child(1) {
+    display: none;
+}
+
+.icon_wa_container {
+    background-color: #D2FFE6;
+    padding: 5% 9%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon_wa{
+    /* background-color: #D2FFE6;
+    padding: 5% 9%;
+    border-radius: 10px; */
+    display: flex;
+    /* flex-direction: row; */
+    /* gap: 2%; */
+    /* width: 15vw; */
+}
+
+.icon_wa a:nth-child(1) {
+    display: none;
+}
+
+
+.icon_wa i{
+    color: #00D95F;
+}
+
+.icon_wa p{
+    color: #00D95F;
+    margin-left: 0.5rem;
+}
+
+.icon_zoom_container {
+    background-color: #D8E9FF;
+    padding: 5% 9%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon_zoom{
+    /* background-color: #D8E9FF;
+    padding: 5% 9%;
+    border-radius: 10px; */
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.icon_zoom i{
+    color: #0E71EB;
+}
+
+.icon_zoom p{
+    color: #0E71EB;
+    margin-left: 0.5rem;
+}
+
+.icon_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.riwayat .icon_wa{
+    justify-content: center;
+    width: 100%;
+}
+
+.pengajar{
+    display: flex;
+    margin-top: 10px;
+}
+
+/* ini logika buat picture gak stretch */
+.profil_pengajar{
+    border-radius: 100%;
+    width: 30px; /* Set your desired width */
+    height: 30px; /* Set your desired height */
+    overflow: hidden; /* This will hide any parts of the image that exceed the container */
+    position: relative; /* Required for absolute positioning of the image */
+}
+
+.profil_pengajar img {
+    position: absolute;
+    width: auto; /* This will allow the image to resize proportionally */
+    height: 100%; /* This will ensure the image fills the entire container vertically */
+    left: 50%; /* Center the image horizontally */
+    top: 50%; /* Center the image vertically */
+    transform: translate(-50%, -50%); /* Center the image precisely */
+}
+
+.loggedin {
+    background: #FFF3E2;
+    border-radius: 20px;
+    padding: 20px;
+    /* width: 90%; */
+    /* margin: auto; */
+    /* margin: 6%; */
+}
+
+.loggedin img{
+    object-fit: cover;
+}
+
+.judulaktif {
+    margin-bottom: 20px;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.judulaktif h2 {
+    color: #5F2A5D;
+}
+
+.containerlist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    padding: 1%;
+}
+
+.list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.list:last-child {
+    margin-right: 0;
+}
+
+.listnya {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 2% 5% 2% 5%;
+    
+}
+
+.photo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.namaemailinfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.useremail {
+    font-size: 14px;
+    color: #666;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.indicator.active {
+    background: #28A745;
+}
+
+.indicator.inactive {
+    background: #cfcfcf;
+}
+
+.containerlist {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 500px;
+}
+
+
+.containerlist::-webkit-scrollbar {
+    width: 1.2em;
+}
+
+.containerlist::-webkit-scrollbar-track {
+    background: #5F2A5D;
+    border-radius: 100vw;
+}
+
+.containerlist::-webkit-scrollbar-thumb {
+    background: #FABEA9;
+    border: .25em solid #5F2A5D;
+    border-radius: 100vw;
+}
+
+.containerlist::-webkit-scrollbar-thumb:hover {
+    background: #FF885E;
+}
+
+.fa-regular {
+    color: #5D5D5D;
+    margin-right: 4px;
+}
+
+.rating{
+    margin: 4%;
+}
+
+.rating i {
+    color: #ffcc00;
+}
+
+.rating i.fa-regular {
+    color: #ddd;
+}
+
+.rating span {
+    color: #FF885E;
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+@media(max-width: 1024px){
+    
+    .containerlist {
+        flex-direction: column;
+    }
+
+    
+
+    .listnya {
+        width: 78vw;
+    }
+
+
+}
+
+@media(max-width: 768px){
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    .btn {
+        width: auto;
+    }
+
+    .btn2, .btn1 {
+        font-size: 12px;
+    }
+
+    .btn2 {
+        width: 100px;
+    }
+
+    .data_profil {
+        margin-top: 10rem;
+        gap: 5vw;
+    }
+    
+
+    .card img {
+        height: 100px;
+        width: 100px;
+        /* margin: 0; */
+    }
+
+    .label, .username {
+        font-size: 14px;
+    }
+
+    .useremail {
+        font-size: 10px;
+    }
+
+    .listnya {
+        width: 75vw;
+    }
+}
+
+
+@media(max-width: 520px){
+    h2 {
+        align-self: center;
+    }
+    .data_profil {
+        margin-top:25rem;
+        gap: 5vw;
+        flex-direction: column;
+    }
+
+    .icon_profil {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    .pp {
+        margin: 0;
+        
+    }
+
+    .containerlist::-webkit-scrollbar {
+        width: 0.8em;
+    }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+        margin: 0;
+    }
+
+    .containerlist {
+        flex-direction: row;
+    }
+
+    .listnya {
+        flex-direction: column;
+        width: 35vw;
+        align-items: center;
+        gap: 0.5rem;
+    
+    }
+
+    .useremail {
+        font-size: 8px;
+    }
+
+    .label {
+        font-size: 10px;
+    }
+
+    .username {
+        text-align: center;
+    }
+
+    .list {
+        margin: 0;
+    }
+
+    .namaemailinfo {
+        /* justify-content: center; */
+        align-items: center;
+    }
+}
+
+@media(max-width: 480px){
+    
+}

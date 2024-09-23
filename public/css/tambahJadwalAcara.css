@@ -1,0 +1,71 @@
+.case{
+
+    margin: 50px;
+    background-color: #F9EEE1;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    font-weight: 600;
+    color: #5F2A5D;
+}
+
+.input{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+label{
+    
+    /* display: block; */
+    width: 10rem;
+}
+
+textarea {
+    resize: none;
+}
+
+select, input, textarea{
+    border: 1px solid #5F2A5D;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 70%;
+}
+
+input[type="time"],
+input[type="date"]{
+    width: 20%;
+}
+
+button{
+    border: 1px solid #5F2A5D;
+    padding: 10px 15px;
+    margin: 50px;
+    margin-top: 0;
+    border-radius: 20px;
+    background-color: #5F2A5D;
+    color: #F9EEE1;
+}
+
+.alert {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+
+.alert ul li {
+    margin-left: 0.4%; /* Adjust as needed */
+}
+
+.alert ul li {
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+}

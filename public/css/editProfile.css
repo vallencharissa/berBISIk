@@ -1,0 +1,102 @@
+.back {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .back a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .back a:hover {
+    color: #23527c;
+  }
+  
+  h1 {
+    color: #5F2A5D;
+    margin: 50px;
+  }
+  
+  .card {
+    margin: 50px;
+    background-color: #F9EEE1;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    display: flex;
+    margin: 10px;
+    align-items: flex-start;
+  }
+  
+  .card label {
+    /* display: flex; */
+    width: 200px;
+  }
+  
+  select, input {
+    border: 1px solid #5F2A5D;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  input[type="file"] {
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    width: 35%;
+  }
+  
+  .input img {
+    width: 10%;
+    height: 10%;
+    padding-left: 1%;
+  }
+  
+  button {
+    border: 1px solid #5F2A5D;
+    padding: 10px 15px;
+    margin: 50px;
+    margin-top: 0;
+    border-radius: 20px;
+    background-color: #5F2A5D;
+    color: #F9EEE1;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+  
+  .rating label i {
+    font-size: 24px;
+    color: #ccc;
+  }
+  
+  .rating label i.checked {
+    color: #ffd700;
+  }
+  
+  .rating input[type="radio"]:checked + label i {
+    color: #ffd700;
+  }
+
+  @media(max-width: 768px) {
+    .input {
+        flex-direction: column;
+    }
+
+}
